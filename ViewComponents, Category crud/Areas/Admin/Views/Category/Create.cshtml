@@ -1,0 +1,24 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="container mt-5">
+    <h1>Slider Create</h1>
+    <form class="forms-sample" asp-action="Create">
+        <div class="form-group mt-5">
+            <label for="formFile" class="form-label">Add a new category name</label>
+            <input class="form-control" type="text" id="formFile" asp-for="Name">
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <button class="btn btn-dark">Cancel</button>
+    </form>
+    <div class="back">
+        <a class="btn btn-primary btn-rounded btn-fw my-5" asp-action="Index">
+            <i class="mdi mdi-arrow-left-bold"></i>
+            Back to main page
+        </a>
+    </div>
+</div>
+
